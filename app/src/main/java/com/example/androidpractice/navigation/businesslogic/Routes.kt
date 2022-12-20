@@ -1,0 +1,28 @@
+package com.example.androidpractice.navigation.businesslogic
+
+enum class Route {
+    Home,
+    Room,
+    DataBinding,
+    ViewBinding,
+    NavigationComponent,
+    Notification,
+    Services,
+    ForegroundService,
+    BackgroundService,
+    OnBindService,
+    OnStartService,
+    RemoteService,
+    LocalService,
+    Sharing,
+    CustomView,
+    WatchCustomView,
+    ToucherCustomView,
+    Ndk,
+    SeparateModule,
+    Retrofit,
+    Flavors,
+    SDCard,
+    WorkManager,
+    VectorView,
+}

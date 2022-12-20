@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        tools:context=".sd_card.ui.SdCardFragment">
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginVertical="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="Internal storage fragment"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <EditText
+                            android:id="@+id/file_name_form"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:hint="Enter filename:"
+                            android:inputType="textMultiLine"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="30dp" />
+
+                        <EditText
+                            android:id="@+id/file_content_form"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:hint="Enter text content:"
+                            android:inputType="textMultiLine"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="30dp" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="Choose action:"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/create_file_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Create file"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/black"
+                            android:textColor="@color/white"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/read_file_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Read file"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/black"
+                            android:textColor="@color/white"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/update_file_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Update file"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/black"
+                            android:textColor="@color/white"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/delete_file_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Delete file"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/black"
+                            android:textColor="@color/white"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/confirm_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="50dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Confirm"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/black"
+                            android:textColor="@color/white"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>
